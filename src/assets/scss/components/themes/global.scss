@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "SpaceGrotesk-VariableFont_wght";
+    letter-spacing: 0.05em;
+
+  }
+  
+  body {
+    position: relative;
+    --bs-body-color: #ffffff;
+    --bs-body-bg: #000;
+    --bs-card-bg: #000; // no me funciona
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+//  variables
+$blue :  #00C7CD;
+$purple:  #B676F4;
+
+
+
+
+.blue{
+  color : $blue; 
+ }
+
+ .purple{
+   color: $purple
+ }
+
+ .main__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+//   @media(max-width: 768px){
+//   // width: 50%;
+//   align-content: center;
+//   }
+
+}

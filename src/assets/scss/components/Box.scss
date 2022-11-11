@@ -1,0 +1,127 @@
+.box__long__box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 305px; //??? rem
+    justify-items: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.01);
+    border: 2px solid #00C7CD;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    // background-color: aquamarine;
+    z-index: -1;
+    @media(max-width: 965px){
+        grid-template-columns: 1fr;
+        grid-auto-rows: 50%;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    @media(max-width: 650px){
+        grid-template-columns: 1fr;
+        grid-auto-rows: 46%;
+        justify-content: center;
+        align-items: center;
+        height: 25rem;
+
+    }
+
+    @media(max-width: 480px){
+    height: 35rem;
+    grid-auto-rows: 42%;
+    }
+
+    @media(max-width: 300px){
+    height: 41rem;
+    }
+ 
+
+    &__img{
+    position: relative;
+    top: -3rem; 
+    left: -1rem;
+    width: 110%;
+    z-index: 0;
+
+    @media(max-width: 965px){
+    top: -6rem; 
+    left: 2.5rem;
+    width: 80%;
+    }
+
+
+    @media(max-width: 480px){
+    top: -6rem; 
+    left: 0.5rem;
+    width: 100%;
+    }
+    }
+
+    &__section{
+        width: 90%;
+
+        @media(max-width: 965px){
+            width: 85%;
+            margin-bottom: 25px;
+        }
+
+        @media(max-width: 480px){
+            width: 84%;
+            margin-bottom: 40px;
+        }
+    
+         &--title{
+        color: $blue;
+        font-size: 24px;
+        font-weight: bolder;
+        }
+
+        &--description{
+            background: linear-gradient(270.19deg, #FFFFFF 61.74%, #D2A5FF 99.89%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}
+
+.box__short__box{
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.01);
+    border: 2px solid #00C7CD;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+  
+
+    @media(max-width: 965px){
+      height: auto;
+    }
+
+    &__section{
+        width: 90%; 
+        align-items: flex-start;
+
+        &--title{
+            color: $blue;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        &--description{
+            background: linear-gradient(270.19deg, #FFFFFF 61.74%, #D2A5FF 99.89%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}
+   

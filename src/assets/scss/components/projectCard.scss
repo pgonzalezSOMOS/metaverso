@@ -1,0 +1,111 @@
+//<Card className="p-0 overflow-hidden h-100 shadow">
+// -bs-card-bg: #fff;
+
+
+
+.card{
+    --bs-card-bg: none;
+}
+.bg-dark {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+
+// .projectCard__card__image{
+//     width: 16rem;
+//     z-index: 1;
+
+    
+
+//     @media(max-width: 967px){
+//     width: 14rem;
+//     }
+// }
+
+
+// .projectCard__card__vector{
+//     position: absolute;
+//     width: 16rem;
+//     left: 0px;
+//     z-index: 0;
+
+//     @media(max-width: 967px){
+//     width: 14rem;
+//     }
+
+//     &:hover{
+//         background: linear-gradient(180deg, rgba(0, 232, 249, 0) 0%, rgba(18, 238, 254, 0.5) 116.77%);
+//     }
+    
+// }
+
+.projectCard__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    width: 200px;
+    
+
+    &__vector{
+        border: 2px solid $blue;
+        border-radius: 10px;
+        // width: 380.07px;
+        // height: 477px;
+        width: 200px;
+        z-index: 9;
+        height:300px;
+        position: relative;
+        left: 50px;
+        transform: skew(-17deg, 1deg);
+        margin-bottom: 20px;
+        z-index: 5;
+       
+    
+        @media(max-width: 1020px){
+            width: 11rem;
+            height: 260px;
+            // left: 20px;
+        }  
+
+        &:hover{
+            background:linear-gradient(180deg, rgba(0, 232, 249, 0) 0%, rgba(18, 238, 254, 0.5) 116.77%);
+        }
+    }
+
+    &__image{
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        z-index: -4;
+        // @media(max-width: 967px){
+        // width: 14rem;
+        // }
+    }
+
+    &__info{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        bottom: -290px; 
+        left: 33px;
+        font-size: 12px;
+        font-weight: bold;
+
+        
+        &--blue{
+            color : $blue;
+        }
+    
+    }
+
+}
+
+

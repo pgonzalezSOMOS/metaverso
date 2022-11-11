@@ -1,0 +1,136 @@
+.navbar__container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 729px;
+    height: 33px;
+    left: 52px;
+    top: 89px;
+    justify-content: start;
+    align-items: center;
+    z-index: 2;
+    width: 100vw;
+
+    @media(max-width: 960px){        
+        // left: 13px;
+        top: 45px;
+    }
+
+    @media(max-width: 700px){        
+    left: 13px;
+    top: 15px;
+    }
+
+    &__div{
+        display: flex;
+        flex-direction: row;
+        // transform: translateX(-50px);
+        // transform: translateY(-1px);
+  
+
+        & img {
+            height: 30px;
+            position: relative;
+            opacity: 1;
+            
+        }
+
+    }
+
+    &__div:hover{
+      
+        & img {
+           opacity: 1;
+        }
+
+    }
+
+    &__div , &__div2{
+        position: absolute;
+        top: 0;  
+        left: 0;
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+
+
+    &__div2{
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        //  transition: transform 0.5s ease-out;
+        //  transform: translateX(-10px);
+
+        @media(max-width: 700px){        
+            flex-direction: column;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            align-items: left;
+         
+        }
+
+        &__row{
+            display: flex;
+            flex-direction: row;
+
+            @media(max-width: 700px){        
+                flex-direction: column;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 200px;
+                background: black;
+                opacity: 0.9;
+                align-items: center;
+                width: 100vw;
+                margin-top: 10px;
+            }
+
+            & p{
+          
+            @media(max-width: 700px){        
+    
+                position: relative;
+                left: -23px;
+                margin-left: 3rem;
+
+            }
+            
+            }
+        }
+    }
+
+    
+
+    &__div2:hover {
+        opacity: 1;
+        // transition: transform 0.5s ease-out;
+        transform: translateX(0px);
+
+    }
+}
+
+
+#mainmenu{
+    height: 30px;
+    max-width: 100px;
+}
+.cancelmenu{
+    width: 50%;
+    height: 36px;
+}
+
+.opacity{
+    opacity: 1;
+}
+
+
+.NavBar--menu--blue{
+    color: $blue;
+    font-size: 20px;
+    margin: 0 20px;
+}
+.navBar--purple:hover{
+    color : $purple; 
+}
